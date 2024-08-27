@@ -1,0 +1,28 @@
+.loader {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 15px dotted #938b8b;
+  animation: spinner 4s linear infinite;
+  &Wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #6f6f6f29;
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotateZ(0);
+  } to {
+    transform: rotateZ(360deg);
+  }
+}

@@ -1,0 +1,15 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  place-items: center;
+}
+
+.productsList {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 20px;
+}

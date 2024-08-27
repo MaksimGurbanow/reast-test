@@ -6,7 +6,12 @@ export const productsApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_URL }),
   endpoints: (build) => ({
     getProducts: build.query<DummyResponse, { limit?: number }>({
-      query: ({ limit }) => `products/category/smartphones?limit=${limit || import.meta.env.VITE_LIMIT}&select=title,price,rating,thumbnail`,
+      query: ({ limit }) => {
+        console.log(import.meta.env.BASE_URL)
+        return `products/category/groceries?limit=${
+          limit || import.meta.env.VITE_LIMIT
+        }&select=title,price,rating,images`;
+      },
     }),
     getProductById: build.query<Product, string>({
       query: (id) => `products/${id}`,

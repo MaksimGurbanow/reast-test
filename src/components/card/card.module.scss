@@ -1,0 +1,45 @@
+.card {
+  width: clamp(25%, 250px, 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  gap: 10px;
+  border: 3px solid #5e6565;
+  border-radius: 10px;
+  height: 500px;
+
+  &Image {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+  }
+
+  &Rating {
+    display: flex;
+    position: relative;
+    gap: 15px;
+
+    &Icons {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+  &Price {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+}
+
+.iconFiller {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 2;
+}
