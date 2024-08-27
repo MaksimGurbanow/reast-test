@@ -1,0 +1,9 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 1px 1px 5px #2b2727;
+  perspective: 500px;
+}

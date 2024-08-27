@@ -13,3 +13,14 @@
   gap: 50px;
   margin: 20px;
 }
+
+.favoriteButton {
+  position: fixed;
+  opacity: 0.5;
+  top: 10px;
+  right: 50%;
+  transform: translate(50%, 50%);
+  &:hover {
+    opacity: 1;
+  }
+}

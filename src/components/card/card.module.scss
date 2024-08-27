@@ -1,5 +1,5 @@
 .card {
-  width: clamp(25%, 250px, 50%);
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +9,12 @@
   border: 3px solid #5e6565;
   border-radius: 10px;
   height: 500px;
+  position: relative;
+  transition: box-shadow 500ms;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 1px 1px 10px 10px #333;
+  }
 
   &Image {
     width: 100%;
@@ -32,6 +38,10 @@
     font-size: 16px;
     letter-spacing: 2px;
   }
+  &Controllers {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .iconFiller {
@@ -42,4 +52,11 @@
   justify-content: center;
   background: transparent;
   z-index: 2;
+}
+
+
+@keyframes around {
+  10% {
+    right: 100%;
+  }
 }

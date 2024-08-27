@@ -1,0 +1,30 @@
+.details {
+  &Page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &TitleBlock, &InfoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &TitleBlock {
+    max-width: 300px;
+  }
+
+  &Image {
+    width: 60%;
+  }
+}
+
+.backButton {
+  position: absolute;
+  top: 30px;
+  right: 80%;
+}

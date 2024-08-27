@@ -10,7 +10,7 @@ export const productsApi = createApi({
         console.log(import.meta.env.BASE_URL)
         return `products/category/groceries?limit=${
           limit || import.meta.env.VITE_LIMIT
-        }&select=title,price,rating,images`;
+        }&select=title,price,rating,images,id`;
       },
     }),
     getProductById: build.query<Product, string>({
